@@ -4,6 +4,7 @@ import ru.ifmo.se.programming.kastricyn.Size;
 
 public class RichPersons extends Persons {
     private Size size = Size.EMPTY;
+
     {
         setName("богачи");
     }
@@ -14,6 +15,6 @@ public class RichPersons extends Persons {
 
     @Override
     public String toString() {
-        return size.toString().replaceFirst("й", "е") +" "+ getName();
+        return size.toString().replaceFirst("й", "е") + " " + getName();
     }
 }

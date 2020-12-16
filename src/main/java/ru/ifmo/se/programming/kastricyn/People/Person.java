@@ -52,28 +52,46 @@ public class Person extends Human implements IPerson {
             answ += " " + thing.toString();
         return answ;
     }
-//    private City currentCity;
+
+    //    private City currentCity;
 //    private Size beauty;
 //
-    public void setAccost(String accost){this.accost = accost;}
-    public String getAccost(){return accost;}
-    public void setLastName(String lastName){this.lastName = lastName;}
-    public String getLastName(){return lastName;}
-    public void setAmbassador(String ambassador){this.ambassador =ambassador;}
-    public String getAmbassador(){return ambassador;}
+    public void setAccost(String accost) {
+        this.accost = accost;
+    }
+
+    public String getAccost() {
+        return accost;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setAmbassador(String ambassador) {
+        this.ambassador = ambassador;
+    }
+
+    public String getAmbassador() {
+        return ambassador;
+    }
 
 //    void setCurrentCity(City currentCity){this.currentCity = currentCity;}
 //    void setBeauty(Size beauty){this.beauty = beauty;}
 
     public String toString() {
-        return accost + " " + lastName +" " +ambassador;
+        return accost + " " + lastName + " " + ambassador;
     }
 
     public String toStringWithoutAmbassador() {
         return accost + " " + lastName;
     }
 
-    public String smile(ActionStatus status){
+    public String smile(ActionStatus status) {
         return status + " улыбается";
     }
 

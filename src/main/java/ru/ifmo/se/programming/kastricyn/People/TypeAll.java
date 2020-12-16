@@ -8,12 +8,13 @@ public enum TypeAll {
 
 
     private String name;
-    TypeAll (String name){
+
+    TypeAll(String name) {
         this.name = name;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return name;
     }
 

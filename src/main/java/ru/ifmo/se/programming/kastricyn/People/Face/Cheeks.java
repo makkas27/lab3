@@ -35,9 +35,8 @@ public class Cheeks {
     }
 
 
-
     @Override
     public String toString() {
-        return count + " " +bulk + " " + name;
+        return count + " " + bulk + " " + name;
     }
 }

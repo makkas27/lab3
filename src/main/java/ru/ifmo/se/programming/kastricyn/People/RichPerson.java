@@ -2,8 +2,9 @@ package ru.ifmo.se.programming.kastricyn.People;
 
 import ru.ifmo.se.programming.kastricyn.Size;
 
-public class RichPerson extends Person{
+public class RichPerson extends Person {
     private Size size = Size.EMPTY;
+
     {
         setName("богач");
     }
@@ -14,7 +15,7 @@ public class RichPerson extends Person{
 
     @Override
     public String toString() {
-        return size.toString() +" "+ getName();
+        return size.toString() + " " + getName();
     }
 
 }

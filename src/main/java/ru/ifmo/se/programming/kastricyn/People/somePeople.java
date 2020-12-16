@@ -6,29 +6,40 @@ import ru.ifmo.se.programming.kastricyn.Saleable;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class somePeople implements IPeople{
+public class somePeople implements IPeople {
     private Human people[];
     private String name = "Какие-то люди";
 
-    public int getCount() {return people.length;}
-    public Human[] getPeople(){return people;}
-    public Human getHuman(int idx){return people[idx];}
+    public int getCount() {
+        return people.length;
+    }
 
-    public somePeople(){
+    public Human[] getPeople() {
+        return people;
+    }
+
+    public Human getHuman(int idx) {
+        return people[idx];
+    }
+
+    public somePeople() {
         int min = 1;
         int max = 100;
-        people = new Human[min+(int)(Math.random()*(max-min))];
+        people = new Human[min + (int) (Math.random() * (max - min))];
         initialPeople();
     }
-    public somePeople(int min, int max){
-        people = new Human[min+(int)(Math.random()*(max-min))];
+
+    public somePeople(int min, int max) {
+        people = new Human[min + (int) (Math.random() * (max - min))];
         initialPeople();
     }
-    public somePeople(int max){
-        people = new Human[(int)(Math.random()*(max))];
+
+    public somePeople(int max) {
+        people = new Human[(int) (Math.random() * (max))];
         initialPeople();
     }
-    private void initialPeople(){
+
+    private void initialPeople() {
         for (int i = 0; i < people.length; i++)
             people[i] = new Person();
     }
@@ -48,15 +59,15 @@ public class somePeople implements IPeople{
         this.name = name;
     }
 
-//    @Override
+    //    @Override
     public String pay(String wages, Saleable thing, String verb, ActionStatus desire) {
         String answ = "";
-        if(!desire.toString().isEmpty())
+        if (!desire.toString().isEmpty())
             answ += desire.toString();
         answ += " " + verb;
-        if(!wages.isEmpty())
+        if (!wages.isEmpty())
             answ += " " + wages;
-        if(!thing.toString().isEmpty())
+        if (!thing.toString().isEmpty())
             answ += " за " + thing.toString();
         return answ;
     }
