@@ -1,4 +1,4 @@
-package ru.ifmo.se.programming.kastricyn.People;
+package ru.ifmo.se.programming.kastricyn.people;
 
 public enum TypeAll {
     ALL("все"),

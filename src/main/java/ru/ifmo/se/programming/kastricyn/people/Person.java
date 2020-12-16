@@ -1,19 +1,16 @@
-package ru.ifmo.se.programming.kastricyn.People;
+package ru.ifmo.se.programming.kastricyn.people;
 
 
 import ru.ifmo.se.programming.kastricyn.ActionStatus;
 import ru.ifmo.se.programming.kastricyn.City;
-import ru.ifmo.se.programming.kastricyn.People.Face.Cheeks;
-import ru.ifmo.se.programming.kastricyn.People.Face.Eyes;
-import ru.ifmo.se.programming.kastricyn.People.Face.Face;
-import ru.ifmo.se.programming.kastricyn.People.Face.Nose;
+import ru.ifmo.se.programming.kastricyn.people.face.Cheeks;
+import ru.ifmo.se.programming.kastricyn.people.face.Eyes;
+import ru.ifmo.se.programming.kastricyn.people.face.Face;
+import ru.ifmo.se.programming.kastricyn.people.face.Nose;
 import ru.ifmo.se.programming.kastricyn.Saleable;
 
 public class Person extends Human implements IPerson {
-    //    @Override
-//    public String pay(String wages, Saleable thing, String verb, ActionStatus desire) {
-//        return null;
-//    }
+
     private String accost = "";
     private String lastName = "";
     private City homeCity = City.Other;
@@ -53,9 +50,7 @@ public class Person extends Human implements IPerson {
         return answ;
     }
 
-    //    private City currentCity;
-//    private Size beauty;
-//
+
     public void setAccost(String accost) {
         this.accost = accost;
     }
@@ -80,8 +75,7 @@ public class Person extends Human implements IPerson {
         return ambassador;
     }
 
-//    void setCurrentCity(City currentCity){this.currentCity = currentCity;}
-//    void setBeauty(Size beauty){this.beauty = beauty;}
+
 
     public String toString() {
         return accost + " " + lastName + " " + ambassador;

@@ -1,10 +1,10 @@
-package ru.ifmo.se.programming.kastricyn.People;
+package ru.ifmo.se.programming.kastricyn.people;
 
 import ru.ifmo.se.programming.kastricyn.City;
 import ru.ifmo.se.programming.kastricyn.Saleable;
 import ru.ifmo.se.programming.kastricyn.Size;
 
-public class Persons extends somePeople implements IPerson {
+public class Persons extends SomePeople implements IPerson {
     private City homeCity = City.Other;
 
     @Override

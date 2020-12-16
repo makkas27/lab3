@@ -1,16 +1,16 @@
 package ru.ifmo.se.programming.kastricyn;
 
-import ru.ifmo.se.programming.kastricyn.People.*;
-import ru.ifmo.se.programming.kastricyn.People.Face.Cheeks;
-import ru.ifmo.se.programming.kastricyn.People.Face.Eyes;
-import ru.ifmo.se.programming.kastricyn.People.Face.Face;
-import ru.ifmo.se.programming.kastricyn.People.Face.Nose;
+import ru.ifmo.se.programming.kastricyn.people.*;
+import ru.ifmo.se.programming.kastricyn.people.face.Cheeks;
+import ru.ifmo.se.programming.kastricyn.people.face.Eyes;
+import ru.ifmo.se.programming.kastricyn.people.face.Face;
+import ru.ifmo.se.programming.kastricyn.people.face.Nose;
 
 public class Main {
     public static void main(String[] args) {
         Stocks stocks = new Stocks();
 //      Какие-то люди очень охотно платили деньги за акции.
-        somePeople people = new somePeople();
+        SomePeople people = new SomePeople();
         System.out.println(people.toString() + " " + people.pay("деньги", stocks, "платили", ActionStatus.GLADLY) + ".");
 
 //      Жители Давилона покупают акции. Приезжие из других городов покупают акции.
@@ -40,7 +40,7 @@ public class Main {
 //        Богачи прекрасно знали, что все акционерные общества и компании устраивались лишь для прикарманивания чужих денег ( = облапошивания бедняков).
         System.out.println(richPersons.toString() + " " + ActionStatus.GOODLY +
                 richPersons.know(" знали", AllStockCompany.String()) + " " +
-                AllStockCompany.createFor(AllStockCompany.reasonForCreate.INTO_POCKET, AllStockCompany.reasonForCreate.SWINDLING_POOR));
+                AllStockCompany.createFor(ReasonForCreate.INTO_POCKET, ReasonForCreate.SWINDLING_POOR));
 
         //        Господин Спрутс – типичный представитель богатейших жителей Грабенберга, не отличающиеся большой красотой – объявился и заинтересовался гигантскими акциями.
         Persons inhabitantGrabenberg = new Persons();

@@ -1,4 +1,4 @@
-package ru.ifmo.se.programming.kastricyn.People;
+package ru.ifmo.se.programming.kastricyn.people;
 
 import ru.ifmo.se.programming.kastricyn.City;
 import ru.ifmo.se.programming.kastricyn.Saleable;

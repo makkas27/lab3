@@ -1,4 +1,4 @@
-package ru.ifmo.se.programming.kastricyn.People;
+package ru.ifmo.se.programming.kastricyn.people;
 
 public class All extends Human {
     public String toString(TypeAll typeAll) {

@@ -1,4 +1,4 @@
-package ru.ifmo.se.programming.kastricyn.People;
+package ru.ifmo.se.programming.kastricyn.people;
 
 import ru.ifmo.se.programming.kastricyn.ActionStatus;
 import ru.ifmo.se.programming.kastricyn.Saleable;
@@ -6,7 +6,7 @@ import ru.ifmo.se.programming.kastricyn.Saleable;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class somePeople implements IPeople {
+public class SomePeople implements IPeople {
     private Human people[];
     private String name = "Какие-то люди";
 
@@ -22,19 +22,19 @@ public class somePeople implements IPeople {
         return people[idx];
     }
 
-    public somePeople() {
+    public SomePeople() {
         int min = 1;
         int max = 100;
         people = new Human[min + (int) (Math.random() * (max - min))];
         initialPeople();
     }
 
-    public somePeople(int min, int max) {
+    public SomePeople(int min, int max) {
         people = new Human[min + (int) (Math.random() * (max - min))];
         initialPeople();
     }
 
-    public somePeople(int max) {
+    public SomePeople(int max) {
         people = new Human[(int) (Math.random() * (max))];
         initialPeople();
     }
@@ -75,8 +75,8 @@ public class somePeople implements IPeople {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof somePeople)) return false;
-        somePeople that = (somePeople) o;
+        if (!(o instanceof SomePeople)) return false;
+        SomePeople that = (SomePeople) o;
         return Arrays.equals(getPeople(), that.getPeople()) && Objects.equals(getName(), that.getName());
     }
 
